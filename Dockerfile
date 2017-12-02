@@ -1,6 +1,3 @@
-FROM alpine
+FROM node:7-alpine
 
-RUN apk update && \
-    apk add curl && \
-    apk add vim && \
-    apk add git
+RUN apk add -U subversion
